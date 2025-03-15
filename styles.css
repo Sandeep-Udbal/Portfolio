@@ -1,0 +1,257 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Default Theme Variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --button-bg: #070a0e;
+    --button-hover: #0a0a0a;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --card-bg: #1e1e1e;
+    --button-bg: #ffcc00;
+    --button-hover: #ff9900;
+}
+
+header {
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    width: 50;
+    background: #ffffff;
+    color: rgb(6, 0, 0);
+    padding: 25px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #cdd7e5;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: var(--card-bg);
+    margin: 30px auto;
+    width: 85%;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    width: 40%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #7a7f82;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px 15px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: hsl(240, 94%, 6%);
+}
+
+button, .cv-button, .view-btn, .download-btn {
+    display: inline-block;
+    background: var(--button-bg);
+    color: white;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: fixed;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(3, 92, 235, 0.805);
+}
+
+button:hover, .cv-button:hover, .view-btn:hover, .download-btn:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(221, 231, 245, 0.894);
+}
+
+/* Footer */
+footer {
+    background: #3289e0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background: none;
+    color: rgb(247, 242, 242);
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.dark-mode-toggle:hover {
+    background: none;
+    transform: scale(1.1);
+}
+
+/* Apply Dark Mode Theme */
+.dark-mode body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+body {
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.projects-section {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #0f0404;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background-color: rgb(224, 220, 220);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #383636;
+}
+.Technologie{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1919
+}
+.Technologies-description{
+    font-size: 12px;
+    color: #383636;
+
+}
+root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --box-bg: #f9f9f9;
+    --btn-bg: #007bff;
+    --btn-text: #ffffff;
+}
+
+/* Dark Mode */
+.dark-theme {
+    --bg-color: #181818;
+    --text-color: #ffffff;
+    --box-bg: #242424;
+    --btn-bg: #ff9800;
+    --btn-text: #000000;
+}
+
